@@ -1708,7 +1708,7 @@ Elm.Life.make = function (_elm) {
          }();
       });
       var bdims = A2($Signal._op["<~"],
-      boardDims(500),
+      boardDims(2000),
       $Window.dimensions);
       var cdims = A2($Signal._op["~"],
       A2($Signal._op["<~"],
@@ -1718,7 +1718,7 @@ Elm.Life.make = function (_elm) {
       return A2($Signal._op["~"],
       A2($Signal._op["<~"],
       fun,
-      A2(life,bdims,1000)),
+      A2(life,bdims,100)),
       cdims);
    }();
    var Zip = F3(function (a,b,c) {
